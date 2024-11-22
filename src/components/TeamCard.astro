@@ -1,8 +1,34 @@
 ---
 import { Image } from "astro:assets";
+
+import { getCollection } from "astro:content";
+const allTeam = await getCollection("team");
 ---
 
-<article>
+{
+  allTeam.map((member) => (
+    <article>
+      <div class="picwrap">
+        <div class="profilepic">
+          <Image
+            alt=""
+            src={member.data.pic}
+            width={300}
+            height={300}
+            alt={`Profile pic of ${member.data.name}`}
+          />
+        </div>
+      </div>
+      <a href={`/team/${member.slug}`}>
+        <p class="name">{member.data.name}</p>
+      </a>
+      <p class="function">{member.data.function}</p>
+      <p class="bio">{member.data.bio}</p>
+    </article>
+  ))
+}
+
+<!-- <article>
   <div class="picwrap">
     <div class="profilepic">
       <Image
@@ -17,7 +43,7 @@ import { Image } from "astro:assets";
   <p class="name"><a href={`/team/${##SLUG##}`}>{##NAME##}</a></p>
   <p class="function">{##FUNCTION##}</p>
   <p class="bio">{##BIO##}</p>
-</article>
+</article> -->
 
 <style>
   article {
