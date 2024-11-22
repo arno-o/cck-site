@@ -19,7 +19,9 @@ const allTeam = await getCollection("team");
           />
         </div>
       </div>
-      <p class="name">{member.data.name}</p>
+      <a href={`/team/${member.slug}`}>
+        <p class="name">{member.data.name}</p>
+      </a>
       <p class="function">{member.data.function}</p>
       <p class="bio">{member.data.bio}</p>
     </article>
