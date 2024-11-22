@@ -1,6 +1,7 @@
 ---
 title: Pen Plotter Basics
 image: ./img/draw.png
+slug: workshop/pen-plotter-basics
 ---
 
 Pen plotters have seen a creative resurgence in recent years, bridging technology and art through precise, computer-controlled drawings that allow for unique, intricate designs on paper. This workshop explores the potential of pen plotters as a tool for artists, designers, and creatives who want to experiment with generative art and create pieces that combine digital precision with traditional media. Participants will learn how to use vector-based software to design their own images, control the plotter's movements, and experiment with different pens, brushes, and inks to bring their ideas to life.

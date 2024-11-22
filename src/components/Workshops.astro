@@ -1,5 +1,6 @@
 ---
-
+import { getCollection } from 'astro:content';
+const allWorkshops = await getCollection('workshops');
 ---
 
 <section class="container" id="workshops">
@@ -12,7 +13,12 @@
     </p>
   </header>
   <ul>
-    <li>##WORKSHOP##</li>
+    <!-- Loop through all workshops -->
+     {
+      allWorkshops.map((workshop) => (
+        <a href={workshop.slug}><li>{workshop.data.title}</li></a>
+      ))
+     }
   </ul>
 </section>
 
