@@ -1,7 +1,7 @@
 ---
 title: Max/MSP
 image: ./img/music.png
-slug: workshop/maxmsp
+slug: maxmsp
 ---
 
 This workshop dives into the world of **Max/MSP**, a powerful visual programming language for music, sound, and multimedia, designed for artists and musicians who want to explore creative audio-visual possibilities. Max/MSP allows users to create custom interactive environments by connecting visual “objects” on the screen, making it accessible to beginners without programming experience and robust enough for seasoned sound designers. In this hands-on session, participants will learn the fundamentals of Max/MSP, exploring how to manipulate sound, create dynamic visuals, and develop interactive systems that respond to live input.

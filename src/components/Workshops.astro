@@ -1,4 +1,6 @@
 ---
+import WorkshopCard from './WorkshopCard.astro';
+
 import { getCollection } from 'astro:content';
 const allWorkshops = await getCollection('workshops');
 ---
@@ -16,7 +18,7 @@ const allWorkshops = await getCollection('workshops');
     <!-- Loop through all workshops -->
      {
       allWorkshops.map((workshop) => (
-        <a href={workshop.slug}><li>{workshop.data.title}</li></a>
+        <WorkshopCard title={workshop.data.title} slug={workshop.slug} image={workshop.data.image} />
       ))
      }
   </ul>
