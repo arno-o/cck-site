@@ -1,13 +1,18 @@
 ---
+import { getCollection } from 'astro:content';
+
+const allFoundations = await getCollection('foundations');
 ---
 
-<details>
-  <summary>{##TITLE##}</summary>
-  <p>{##DESCRIPTION##}</p>
-  <a href={`/foundations/${##SLUG##}`}>
-    Find out how we put this in practice
-  </a>
-</details>
+{allFoundations.map((f) => (
+    <details>
+      <summary>{f.data.title}</summary>
+      <p>{f.data.description}</p>
+      <a href={`/foundations/${f.slug}`}>
+        Find out how we put this in practice
+      </a>
+    </details>
+))}
 
 <style>
   details {
