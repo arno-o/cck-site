@@ -10,3 +10,5 @@
 ### Illustrations
 
 <https://pixels.market/illustrations/doodledo?c=technology>
+
+[![pages-build-deployment](https://github.com/arno-o/cck-site/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/arno-o/cck-site/actions/workflows/pages/pages-build-deployment)
