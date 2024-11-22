@@ -8,6 +8,8 @@ import "../styles/markdown.css";
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -16,7 +18,7 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>CCK | Creative Code Kortrijk</title>
+    <title>CCK | {title}</title>
   </head>
   <body>
     <Header />
